@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Python SDK documentation / Python SDK 文档"
+    url: https://docs.linkerhub.work/sdk/zh-cn/
+    about: "Installation and usage documentation for the Python SDK. / Python SDK 安装与使用文档。"
+  - name: "Security policy / 安全策略"
+    url: https://github.com/linker-bot/.github/blob/main/SECURITY.md
+    about: "Report vulnerabilities privately. / 私下报告安全漏洞。"
+  - name: "Support guide / 支持指南"
+    url: https://github.com/linker-bot/.github/blob/main/SUPPORT.md
+    about: "Find the right place for help. / 找到合适的反馈渠道。"

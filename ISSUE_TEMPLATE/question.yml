@@ -1,0 +1,25 @@
+name: "Usage question / 使用咨询"
+description: "Ask a project-specific setup or usage question. / 咨询项目安装与使用。"
+title: "[Question]: "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: "Question / 问题"
+      description: "Describe what you want to achieve and where you are stuck. / 说明目标与遇到的困难。"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment / 环境"
+      description: "Project version, OS, dependencies, and device/firmware/connection if relevant. / 项目版本、系统、依赖及相关硬件信息。"
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: "What you tried / 已尝试的步骤"
+      description: "Include documentation consulted, commands, and sanitized output. / 提供已查阅的文档、命令与脱敏输出。"
+    validations:
+      required: true

@@ -1,0 +1,57 @@
+name: "Bug report / 问题反馈"
+description: "Report a reproducible problem with a Linkerbot project. / 提交可复现的问题。"
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "For security vulnerabilities, follow the repository's security policy instead of filing a public issue. / 安全漏洞请私下报告。"
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / 问题描述"
+      description: "What happened, and what did you expect? / 实际行为与预期行为。"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "Project version or commit / 项目版本或提交"
+      placeholder: "Release/tag or commit SHA"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment / 运行环境"
+      description: "OS and architecture, Python/compiler version, ROS distribution (if applicable), and relevant dependency versions. / 系统、架构、语言与依赖版本。"
+    validations:
+      required: true
+  - type: dropdown
+    id: context
+    attributes:
+      label: "Execution context / 运行场景"
+      options:
+        - "Software only / 纯软件"
+        - "Simulation / 仿真"
+        - "Physical hardware / 真实硬件"
+        - "Both simulation and hardware / 仿真与硬件"
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: "Hardware details / 硬件信息"
+      description: "If relevant: device model, firmware, CAN/USB/network connection and adapter. Otherwise write N/A. / 型号、固件、连接方式及适配器；不涉及硬件可填 N/A。"
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "Reproduction steps / 复现步骤"
+      description: "Include minimal code or commands and state whether it is consistent or intermittent. / 提供最小代码或命令，说明是否稳定复现。"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs and additional context / 日志与补充信息"
+      description: "Remove credentials, personal data, and sensitive network details before sharing. / 请先移除敏感信息。"
+      render: text

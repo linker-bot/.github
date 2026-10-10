@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+  <title id="title">Linkerbot — Clever Hands Create Everything</title>
+  <desc id="desc">A dark blue banner with a geometric articulated hand and cyan connections.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c35"/><stop offset="1" stop-color="#07101f"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#243550" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#grid)" opacity=".45"/>
+  <rect x="64" y="63" width="44" height="5" rx="2" fill="#65e5dc"/>
+  <text x="64" y="137" fill="#f5f8ff" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">Linkerbot</text>
+  <text x="67" y="187" fill="#65e5dc" font-family="Arial, Helvetica, sans-serif" font-size="28">Clever Hands Create Everything</text>
+  <text x="67" y="246" fill="#b9c8df" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2">DEXTEROUS HANDS / ROBOTICS / SIMULATION</text>
+  <g fill="none" stroke="#65e5dc" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M958 257V201L912 160L902 135L921 121L962 162V99L971 60L992 61L999 98V153V78L1011 40L1033 42L1038 81V153V92L1050 57L1071 61L1076 98V165V125L1088 91L1108 98L1111 134V210L1079 257Z"/>
+    <path d="M982 195L1027 176L1081 195M1027 176V229" stroke="#8b9fbd" stroke-width="5"/>
+  </g>
+  <g fill="#f5f8ff"><circle cx="982" cy="195" r="7"/><circle cx="1027" cy="176" r="7"/><circle cx="1081" cy="195" r="7"/></g>
+</svg>

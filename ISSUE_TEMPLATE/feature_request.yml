@@ -1,0 +1,23 @@
+name: "Feature request / 功能建议"
+description: "Suggest an improvement or integration. / 提出改进或集成建议。"
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: "Use case / 使用场景"
+      description: "What are you trying to do, and what is missing? / 你要完成什么，目前缺少什么？"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposed change / 建议方案"
+      description: "Describe desired behavior, relevant hardware or platforms, and compatibility considerations. / 说明期望行为、设备或平台及兼容性影响。"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives / 替代方案"
+      description: "What have you tried? Links or examples are welcome. / 已尝试的方案，可附链接或示例。"
