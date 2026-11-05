@@ -6,9 +6,13 @@ This repository maintains the public organization profile, shared contribution g
 
 - [English profile](profile/README.md)
 - [中文主页](profile/README.zh-CN.md)
-- [Profile artwork](profile/assets/banner.svg)
+- [Profile artwork](profile/assets/banner.png)
 
 GitHub displays `profile/README.md` on the public organization overview when this repository is public.
+
+## SDK navigation
+
+The [SDK directory](https://github.com/linker-bot/SDK) tracks maintained hand and arm SDKs, transport libraries, tools, and legacy migration guidance. Keep both organization profiles aligned with that directory; compatibility and installation details belong in each project.
 
 ## Community defaults
 
