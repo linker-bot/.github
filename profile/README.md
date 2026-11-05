@@ -1,34 +1,39 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/linker-bot/.github/main/profile/assets/banner.svg" alt="Linkerbot — Clever Hands Create Everything" width="100%">
+  <img src="https://raw.githubusercontent.com/linker-bot/.github/main/profile/assets/banner.png" alt="LinkerBot — Clever Hands Create Everything" width="100%">
 </p>
 
 <p align="center">
-  Open-source tools for dexterous hands, robot integration, and simulation.
+  Open-source SDKs, communication libraries, teleoperation tools, and simulation projects for LinkerBot hands and arms.
 </p>
 
 <p align="center">
   <a href="https://linkerbot.cn">Website</a> ·
-  <a href="https://docs.linkerhub.work/sdk/zh-cn/">Python SDK documentation</a> ·
+  <a href="https://github.com/linker-bot/SDK">SDK directory</a> ·
   <a href="https://github.com/linker-bot/.github/blob/main/profile/README.zh-CN.md">中文</a>
 </p>
 
 ## Start building
 
-- **Control hardware with Python** — start with the [Linkerbot Python SDK](https://github.com/linker-bot/linkerbot-python-sdk).
-- **Integrate with ROS 2** — explore the [LinkerHand ROS 2 SDK](https://github.com/linker-bot/linkerhand-ros2-sdk).
-- **Develop in C++** — use the [LinkerHand C++ SDK](https://github.com/linker-bot/linkerhand-cpp-sdk).
-- **Explore simulation** — start with [linker-sim](https://github.com/linker-bot/linker-sim) and its repository documentation.
+Use the [SDK directory](https://github.com/linker-bot/SDK) to choose a maintained project and check migration guidance for older SDKs. Install and build software from the individual repositories.
 
-Check each project's supported devices, firmware, operating systems, and setup instructions before running examples on hardware.
+- **Hands:** use the [C++ SDK](https://github.com/linker-bot/linkerbot-hand-cpp-sdk) or [Python SDK](https://github.com/linker-bot/linkerbot-hand-python-sdk), or the [Hand ROS 2 SDK](https://github.com/linker-bot/linkerbot-hand-ros2-sdk) for ROS topics and services.
+- **Arms:** use the [Arm Python SDK](https://github.com/linker-bot/linkerbot-arm-python-sdk) or [Arm ROS 2 SDK](https://github.com/linker-bot/linkerbot-arm-ros2-sdk).
+- **Communication:** use the [C++ transport library](https://github.com/linker-bot/linkerbot-transport-cpp) or [Python transport library](https://github.com/linker-bot/linkerbot-transport) for communication independently of device control APIs.
+- **Simulation:** start with [linker-sim](https://github.com/linker-bot/linker-sim) and its repository documentation.
+
+Check each project's supported models, firmware, adapters, operating systems, and installation instructions before running hardware examples.
 
 ## Explore the ecosystem
 
-### SDKs and robot integration
+### Tools and teleoperation
 
-- [linkerbot-python-sdk](https://github.com/linker-bot/linkerbot-python-sdk) — Python SDK for Linkerbot hardware.
-- [linkerhand-cpp-sdk](https://github.com/linker-bot/linkerhand-cpp-sdk) — LinkerHand C++ SDK.
-- [linkerhand-ros2-sdk](https://github.com/linker-bot/linkerhand-ros2-sdk) — ROS 2 integration.
-- [linkerhand-ros-sdk](https://github.com/linker-bot/linkerhand-ros-sdk) — ROS 1 integration; check the project's supported environment.
+- [linkerbot-hand-tools](https://github.com/linker-bot/linkerbot-hand-tools) — CLI/TUI and Web tools for hand control, telemetry, tactile visualization, and offline simulation.
+- [linkerhand-telop-ros2](https://github.com/linker-bot/linkerhand-telop-ros2) — ROS 2 glove-to-hand motion retargeting.
+- [linkerbot-teleop-arm](https://github.com/linker-bot/linkerbot-teleop-arm) — reads a dual-arm input device over SocketCAN, with a C++ core, CLI, and ROS 2 node. This is an input-device reader, not the arm motion-control SDK.
+
+### Existing deployments
+
+Earlier SDKs are retained for existing applications. Consult the [SDK directory and legacy migration guide](https://github.com/linker-bot/SDK/blob/main/MIGRATION.md) before changing SDKs. A successor is not necessarily a drop-in replacement; verify model and interface compatibility.
 
 ### Simulation and assets
 

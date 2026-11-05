@@ -1,32 +1,37 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/linker-bot/.github/main/profile/assets/banner.svg" alt="Linkerbot — Clever Hands Create Everything" width="100%">
+  <img src="https://raw.githubusercontent.com/linker-bot/.github/main/profile/assets/banner.png" alt="LinkerBot — Clever Hands Create Everything" width="100%">
 </p>
 
-<p align="center">面向灵巧手开发、机器人集成与仿真的开源工具。</p>
+<p align="center">面向 LinkerBot 灵巧手与机械臂的开源 SDK、通信库、遥操作工具和仿真项目。</p>
 
 <p align="center">
   <a href="https://linkerbot.cn">官网</a> ·
-  <a href="https://docs.linkerhub.work/sdk/zh-cn/">Python SDK 文档</a> ·
+  <a href="https://github.com/linker-bot/SDK">SDK 项目目录</a> ·
   <a href="https://github.com/linker-bot/.github/blob/main/profile/README.md">English</a>
 </p>
 
 ## 从这里开始
 
-- **使用 Python 控制硬件**：从 [Linkerbot Python SDK](https://github.com/linker-bot/linkerbot-python-sdk) 开始。
-- **接入 ROS 2 系统**：查看 [LinkerHand ROS 2 SDK](https://github.com/linker-bot/linkerhand-ros2-sdk)。
-- **使用 C++ 开发**：查看 [LinkerHand C++ SDK](https://github.com/linker-bot/linkerhand-cpp-sdk)。
-- **探索仿真**：从 [linker-sim](https://github.com/linker-bot/linker-sim) 和仓库中的使用说明开始。
+先在 [SDK 项目目录](https://github.com/linker-bot/SDK)中选择维护中的项目，并查看旧版 SDK 的迁移说明。安装与构建步骤以各项目仓库为准。
 
-运行硬件示例前，请先核对各项目支持的设备、固件、操作系统和安装步骤。
+- **灵巧手控制**：使用 [C++ SDK](https://github.com/linker-bot/linkerbot-hand-cpp-sdk)、[Python SDK](https://github.com/linker-bot/linkerbot-hand-python-sdk)，或通过 [Hand ROS 2 SDK](https://github.com/linker-bot/linkerbot-hand-ros2-sdk) 接入 ROS 话题与服务。
+- **机械臂控制**：使用 [Arm Python SDK](https://github.com/linker-bot/linkerbot-arm-python-sdk) 或 [Arm ROS 2 SDK](https://github.com/linker-bot/linkerbot-arm-ros2-sdk)。
+- **通信集成**：使用 [C++ 通信库](https://github.com/linker-bot/linkerbot-transport-cpp)或 [Python 通信库](https://github.com/linker-bot/linkerbot-transport)，独立于设备控制 API 接入通信。
+- **仿真**：从 [linker-sim](https://github.com/linker-bot/linker-sim) 和仓库中的使用说明开始。
+
+运行硬件示例前，请先核对各项目支持的型号、固件、适配器、操作系统和安装步骤。
 
 ## 项目导航
 
-### SDK 与机器人集成
+### 工具与遥操作
 
-- [linkerbot-python-sdk](https://github.com/linker-bot/linkerbot-python-sdk)：Linkerbot 硬件的 Python SDK。
-- [linkerhand-cpp-sdk](https://github.com/linker-bot/linkerhand-cpp-sdk)：LinkerHand C++ SDK。
-- [linkerhand-ros2-sdk](https://github.com/linker-bot/linkerhand-ros2-sdk)：ROS 2 集成。
-- [linkerhand-ros-sdk](https://github.com/linker-bot/linkerhand-ros-sdk)：ROS 1 集成，请查阅项目支持的环境。
+- [linkerbot-hand-tools](https://github.com/linker-bot/linkerbot-hand-tools)：灵巧手 CLI/TUI 与 Web 工具，支持遥测、触觉可视化和离线仿真。
+- [linkerhand-telop-ros2](https://github.com/linker-bot/linkerhand-telop-ros2)：ROS 2 数据手套到灵巧手的运动重定向。
+- [linkerbot-teleop-arm](https://github.com/linker-bot/linkerbot-teleop-arm)：通过 SocketCAN 读取双臂输入设备，提供 C++ 核心、CLI 和 ROS 2 节点；该项目不负责机械臂运动控制。
+
+### 已有应用与旧版 SDK
+
+旧版 SDK 保留供已有应用使用。更换 SDK 前，请查阅 [SDK 目录与旧版迁移指南](https://github.com/linker-bot/SDK/blob/main/MIGRATION.md)。后继项目不一定能够直接替换旧版，需核对型号覆盖与接口差异。
 
 ### 仿真与资产
 
